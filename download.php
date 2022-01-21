@@ -78,6 +78,26 @@
         h2{
             text-indent: 30px;
         }
+
+        a.button {
+            display: inline-flex;
+            background: #000000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .test{
+            display: flex;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-right: 10px;
+            justify-content: space-around;
+            align-content: stretch;
+        }
     </style>
 </head>
 <body>
@@ -100,7 +120,7 @@
 
 <div class="test">
     <a href="movie.php" class="button">
-        <h2>Если не знаете, как скачать, то нажмите</h2>
+        <h2 style="text-indent: 0px">Если не знаете, как скачать, то нажмите </h2>
     </a>
 </div>
 

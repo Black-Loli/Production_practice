@@ -5,80 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0px;
-            display: block;
-            background: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 100%);
-        }
-
-        .black {
-            background: #000000;
-            width: 100%;
-            height: 80px;
-        }
-
-        .black img{
-            height: 75px;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black a{
-            background: #000000;
-            height: 75px;
-            float: right;
-            padding: 1px 0px;
-            border-width: 0px;
-            cursor: pointer;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black a:hover{
-            background: #0c0c0c;
-            cursor: pointer;
-        }
-
-        .black a:active{
-            background: #252525;
-            cursor: pointer;
-        }
-
-        .black .menu img{
-            height: 75px;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black .menu{
-            background: #000000;
-            height: 75px;
-            float: left;
-            padding: 1px 0px;
-            border-width: 0px;
-            cursor: pointer;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        h1{
-            text-align: center;
-            font-size: 40px;
-        }
-
-        .gray{
-            text-align: inherit;
-            margin: 50px;
-            border-radius: 20px;
-            padding: 10px;
-        }
-
-        h2{
-            text-indent: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Тип переменной</title>
 </head>
 <body>
 <div class="black">
@@ -88,7 +16,7 @@
 
 <h1>Тип переменной</h1>
 
-<div class="gray">
+<div class="text">
     <h2> В качестве данных в программах на языке Паскаль могут выступать числа, символы, целые строки символов. Заметьте, что с этими различными видами информации выполняются совершенно разные действия. Например, с числовыми величинами производятся арифметические операции, чего невозможно сделать с символьными. Кроме того, разные виды данных требуют различного объема памяти для хранения. В соответствии с этими соображениями в языке Паскаль введено понятие "Тип" (TYPE). Тип переменной указывает на то, какие данные могут быть сохранены в этом участке памяти, и в каких действиях эта переменная может участвовать. Существуют зарезервированные (базовые) типы в языке Паскаль, но, как далее вы убедитесь, есть также возможность создавать свои собственные, определяемые программистом типы переменных.</h2>
     <h2> К базовым типам относятся:</h2>
     <h2> - Integer - тип целых чисел</h2>

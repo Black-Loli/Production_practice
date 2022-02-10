@@ -5,80 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0px;
-            display: block;
-            background: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 100%);
-        }
-
-        .black {
-            background: #000000;
-            width: 100%;
-            height: 80px;
-        }
-
-        .black img{
-            height: 75px;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black a{
-            background: #000000;
-            height: 75px;
-            float: right;
-            padding: 1px 0px;
-            border-width: 0px;
-            cursor: pointer;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black a:hover{
-            background: #0c0c0c;
-            cursor: pointer;
-        }
-
-        .black a:active{
-            background: #252525;
-            cursor: pointer;
-        }
-
-        .black .menu img{
-            height: 75px;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black .menu{
-            background: #000000;
-            height: 75px;
-            float: left;
-            padding: 1px 0px;
-            border-width: 0px;
-            cursor: pointer;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        h1{
-            text-align: center;
-            font-size: 40px;
-        }
-
-        .gray{
-            text-align: inherit;
-            margin: 50px;
-            border-radius: 20px;
-            padding: 10px;
-        }
-
-        h2{
-            text-indent: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Операции</title>
 </head>
 <body>
 <div class="black">
@@ -88,7 +16,7 @@
 
 <h1>Операции</h1>
 
-<div class="gray">
+<div class="text">
     <h2> Базовые операции на языке Паскаль, которые упрощают нам жизнь:</h2>
     <h2> + сложение</h2>
     <h2> - вычитание</h2>

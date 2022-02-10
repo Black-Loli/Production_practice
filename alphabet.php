@@ -5,80 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0px;
-            display: block;
-            background: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 100%);
-        }
-
-        .black {
-            background: #000000;
-            width: 100%;
-            height: 80px;
-        }
-
-        .black img{
-            height: 75px;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black a{
-            background: #000000;
-            height: 75px;
-            float: right;
-            padding: 1px 0px;
-            border-width: 0px;
-            cursor: pointer;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black a:hover{
-            background: #0c0c0c;
-            cursor: pointer;
-        }
-
-        .black a:active{
-            background: #252525;
-            cursor: pointer;
-        }
-
-        .black .menu img{
-            height: 75px;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black .menu{
-            background: #000000;
-            height: 75px;
-            float: left;
-            padding: 1px 0px;
-            border-width: 0px;
-            cursor: pointer;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        h1{
-            text-align: center;
-            font-size: 40px;
-        }
-
-        .gray{
-            text-align: inherit;
-            margin: 50px;
-            border-radius: 20px;
-            padding: 10px;
-        }
-
-        h2{
-            text-indent: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Алфавит и символы языка</title>
 </head>
 <body>
 <div class="black">
@@ -86,9 +14,9 @@
     <a href="loading.php"> <img src="https://3.downloader.disk.yandex.ru/preview/fef01af9ac01de5e8b4a850679d8906ceb738fd086c0b035e765ada8c0a76028/inf/jA_kSFI5ol72RAKk83uu4kLC8ttpWQszL5u0tdolgdWI2PFmYyNPKz-mddwTLdfKEBC2vnsl9sfzhWkfHd3SHQ%3D%3D?uid=555148530&filename=head.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=555148530&tknv=v2&size=1838x937"></a>
 </div>
 
-<h1>Язык и символы языка</h1>
+<h1>Алфавит и символы языка</h1>
 
-<div class="gray">
+<div class="text">
     <h2> Основу любого языка составляет алфавит, то есть конечный, фиксированный набор символов, используемых для составления текстов на данном языке (в нашем случае - программ).</h2>
     <h2> Алфавит Паскаля:</h2>
     <h2> - прописные латинские буквы - A, B, C, D …, X, Y, Z</h2>

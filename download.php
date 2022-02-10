@@ -5,100 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0px;
-            display: block;
-            background: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 100%);
-        }
-
-        .black {
-            background: #000000;
-            width: 100%;
-            height: 80px;
-        }
-
-        .black img{
-            height: 75px;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black a{
-            background: #000000;
-            height: 75px;
-            float: right;
-            padding: 1px 0px;
-            border-width: 0px;
-            cursor: pointer;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black a:hover{
-            background: #0c0c0c;
-            cursor: pointer;
-        }
-
-        .black a:active{
-            background: #252525;
-            cursor: pointer;
-        }
-
-        .black .menu img{
-            height: 75px;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        .black .menu{
-            background: #000000;
-            height: 75px;
-            float: left;
-            padding: 1px 0px;
-            border-width: 0px;
-            cursor: pointer;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-
-        h1{
-            text-align: center;
-            font-size: 40px;
-        }
-
-        .gray{
-            text-align: inherit;
-            margin: 50px;
-            border-radius: 20px;
-            padding: 10px;
-        }
-
-        h2{
-            text-indent: 30px;
-        }
-
-        a.button {
-            display: inline-flex;
-            background: #000000;
-            color: #fff;
-            padding: 10px;
-            border-radius: 20px;
-            font-size: 18px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .test{
-            display: flex;
-            margin-top: 60px;
-            margin-bottom: 60px;
-            margin-right: 10px;
-            justify-content: space-around;
-            align-content: stretch;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Что скачать?</title>
 </head>
 <body>
 <div class="black">
@@ -108,7 +16,7 @@
 
 <h1>Что скачать?</h1>
 
-<div class="gray">
+<div class="text">
     <h2> Выбрав язык Pascal для обучения вы не ошиблись, так как он самый простой и интуитивно понятный. Чтобы начать с ним работать нужно скачать комплятор (программу, которая будет считывать код и переводить его на язык машинных кодов). Другими словами, все языки программирования представляют собой способ взаимодействия или общения с компьютером. Благодаря комплилятору ваша речь будет понятна машине. </h2>
     <h2> Самые известные компиляторы, которые вы можете скачать:</h2>
     <h2> - Pascal ABC</h2>

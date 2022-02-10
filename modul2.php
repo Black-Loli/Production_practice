@@ -17,7 +17,7 @@
 <p><img src="https://1.downloader.disk.yandex.ru/preview/c2f8a143a1334ccb16ea430f169545e7e8e44e28531c5720e0f582d4e5c910dd/inf/DoLBoa2AdnO7krcNo_Mq1qXbC6InlsbtgNv7qoFkmTVBQsZF2WUSHPcC3C3E33_peLO12Fp5_-Z6m711W9kFHg%3D%3D?uid=555148530&filename=premium-icon-test-4345052.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=555148530&tknv=v2&size=1838x937"></p>
 <h1> Для открытия данного модуля пройдите тест после модуля 1</h1>
 
-<div class="test">
+<div class="gray">
     <a href="test1.php" class="button">
         <h2>Пройти тест</h2>
         <img src="https://3.downloader.disk.yandex.ru/preview/e0658bf25c72d644e85b6364a9d0dd483663c98580878f3480b905225f3e4757/inf/gNdg1_t69aJyrdTS3FURjkEt7gDWQyq0Al9wgW7lP0LMT2gxY7zaTZHaFqZEdLwb1124EOmmsBU2Znsrs3ptTQ%3D%3D?uid=555148530&filename=premium-icon-test-434505243.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=555148530&tknv=v2&size=1838x937">

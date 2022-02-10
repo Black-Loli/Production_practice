@@ -51,7 +51,7 @@
         </a>
     </div>
 
-    <div class="test">
+    <div class="gray">
         <a href="test1.php" class="button">
             <h2>Пройти тест</h2>
             <img src="https://3.downloader.disk.yandex.ru/preview/e0658bf25c72d644e85b6364a9d0dd483663c98580878f3480b905225f3e4757/inf/gNdg1_t69aJyrdTS3FURjkEt7gDWQyq0Al9wgW7lP0LMT2gxY7zaTZHaFqZEdLwb1124EOmmsBU2Znsrs3ptTQ%3D%3D?uid=555148530&filename=premium-icon-test-434505243.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=555148530&tknv=v2&size=1838x937">

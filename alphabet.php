@@ -5,8 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
     <title>Алфавит и символы языка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <div class="black">
@@ -37,7 +38,7 @@
 
     <h2> Также, в языке Паскаль существует определенное количество разных цепочек символов, которые представляют собой единые смысловые элементы с фиксированным значением. Эти цепочки символов принято называть служебными словами.</h2>
 
-    <table>
+    <table class="table table-striped">
         <tr class="tab">
             <td> Служебное слово языка Паскаль </td>
             <td> Значение служебного слова </td>

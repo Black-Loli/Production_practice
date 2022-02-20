@@ -132,10 +132,36 @@ iframe{
     cursor: pointer;
     margin-right: 10px;
     margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .pass a img{
     height: 85px;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.log{
+    position: relative;
+    margin-bottom: 24px;
+
+}
+
+label{
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+span{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    vertical-align: top;
+}
+
+.line{
+    border-bottom: 1px solid #d4d8e0;
+    border-radius: 0 !important;
 }

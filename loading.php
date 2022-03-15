@@ -12,10 +12,11 @@
 <body>
     <div class="pass">
         <form action="#" class="pass1">
-            <img src="https://1.downloader.disk.yandex.ru/preview/cdeb87ec47c65cd3f9239edd7ebdb5487556db024b2ed5939c7f28ffd5e75ebf/inf/xcEEmTPdsT8Xo4E7kJv-OUU_bOVXEM1hBaP5VE6DWGyI00c38YuZUDrwfLJChR5H8iDL9hZHlgUuKC5m4YvyZQ%3D%3D?uid=555148530&filename=Lovely_Nails__3_-removebg-preview.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=555148530&tknv=v2&size=1898x927">
-            <input type="email" placeholder="Введите свой email" required="" />
-            <input type="password" placeholder="Введите пароль" required="" minlength="6" maxlength="12" />
+            <h2 class="z"> Aзбука<br>Программирования </h2>
+            <input type="email" placeholder="Логин" required="" />
+            <input type="password" placeholder="Пароль" required="" minlength="6" maxlength="12" />
             <button type="submit" class="btn btn-outline-light"> Войти </button>
+            <button type="submit" class="btn btn-outline-light reg"> Регистрация </button>
         </form>
     </div>
 </body>

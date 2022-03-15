@@ -127,42 +127,6 @@ iframe{
     display: block;
 }
 
-.pass{
-    display: flex;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    justify-content: space-around;
-    align-content: stretch;
-}
-
-.pass div{
-    background: #000000;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: center;
-
-}
-
-.pass a{
-    background: #000000;
-    height: 75px;
-    float: left;
-    padding: 1px 0;
-    border-width: 0;
-    cursor: pointer;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.pass a img{
-    height: 85px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
 table.table{
     width: 600px;
     margin-top: 20px;
@@ -190,67 +154,4 @@ h4{
     color: #a20000;
     font-size: 15px;
     font-weight: 100;
-}
-
-
-.pass{
-    display: flex;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    justify-content: space-around;
-    align-content: stretch;
-}
-
-.pass div{
-    background: #000000;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: center;
-
-}
-
-.pass a{
-    background: #000000;
-    height: 75px;
-    float: left;
-    padding: 1px 0;
-    border-width: 0;
-    cursor: pointer;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
-
-.pass a img{
-    height: 85px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.log{
-    position: relative;
-    margin-bottom: 24px;
-
-}
-
-label{
-    margin-bottom: 24px;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-span{
-    position: relative;
-    display: inline-block;
-    box-sizing: border-box;
-    width: 100%;
-    vertical-align: top;
-}
-
-.line{
-    border-bottom: 1px solid #d4d8e0;
-    border-radius: 0 !important;
 }

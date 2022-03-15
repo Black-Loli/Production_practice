@@ -17,13 +17,13 @@
 <h1>Список модулей</h1>
 
 <div class="gray">
-    <a href="modul1.php" class="button">
+    <a href="modul1.php" class="bt">
         <h2>Модуль 1</h2>
     </a>
 </div>
 
 <div class="gray">
-    <a href="modul2.php" class="button">
+    <a href="modul2.php" class="bt">
         <h2>Модуль 2</h2>
     </a>
 </div>

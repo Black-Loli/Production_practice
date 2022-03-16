@@ -28,19 +28,19 @@ body{
     text-decoration: none;
     text-align: center;
     max-width: 500px;
-    max-width: 500px;
+    min-width: 450px;
 }
 
-.pass .pass1 input{
-    margin-bottom: 30px;
+.pass .pass1 input, .pass .pass1 .dol {
+    margin-bottom: 40px;
     width: 90%;
     border-radius: 10px;
     border: 1px solid #bdbcbc;
-    padding: 20px;
+    padding: 18px 20px;
     color: #333333;
 }
 
-.pass .pass1 input:focus {
+.pass .pass1 input:focus, .pass .pass1 .dol:focus {
     color: #212529;
     background-color: #ffffff;
     border-color: #ffffff;
@@ -61,9 +61,22 @@ input::-webkit-input-placeholder {
     padding: 15px 10px;
 }
 
+.pass .bt{
+    width: 45%;
+}
+
+.pass .pass1 .op{
+    display: none;
+}
+
 .pass .reg{
-    width: 25%;
+    width: 28%;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px auto 30px;
+    padding: 15px 10px;
 }
 
 .pass .z{
@@ -71,5 +84,5 @@ input::-webkit-input-placeholder {
     color: #d9d9d9;
     font-weight: 100;
     filter: drop-shadow(0 1px #ff00ff) drop-shadow(0 -1px #00ffff);
-    margin: 25px 10px 30px;
+    margin: 30px 10px 50px;
 }

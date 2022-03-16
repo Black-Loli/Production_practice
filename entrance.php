@@ -16,7 +16,7 @@
             <input type="email" placeholder="Логин" required="" />
             <input type="password" placeholder="Пароль" required="" minlength="6" maxlength="12" />
             <button type="submit" class="btn btn-outline-light"> Войти </button>
-            <button type="submit" class="btn btn-outline-light reg"> Регистрация </button>
+            <a href="registrachiay.php" class="btn btn-outline-light reg"> Регистрация </a>
         </form>
     </div>
 </body>

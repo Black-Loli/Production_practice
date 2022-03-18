@@ -15,7 +15,7 @@
             <h2 class="z"> Aзбука<br>Программирования </h2>
             <input type="email" placeholder="Логин" required="" />
             <input type="password" placeholder="Пароль" required="" minlength="6" maxlength="12" />
-            <button onclick="entrance" type="submit" class="btn btn-outline-light"> Войти </button>
+            <button onclick="entrance()" type="button" class="btn btn-outline-light"> Войти </button>
             <a href="registrachiay.php" class="btn btn-outline-light reg"> Регистрация </a>
         </form>
     </div>

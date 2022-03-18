@@ -24,7 +24,7 @@
         <input type="email" placeholder="Введите почту" required="" />
         <input type="password" placeholder="Придумайте пароль" required="" minlength="6" maxlength="12" />
         <input type="password" placeholder="Подтвердите пароль" required="" minlength="6" maxlength="12" />
-        <button type="submit" class="btn btn-outline-light bt"> Зарегистрироваться </button>
+        <button onclick="entrance()" type="button" class="btn btn-outline-light bt"> Зарегистрироваться </button>
     </form>
 </div>
 </body>

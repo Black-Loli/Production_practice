@@ -1,3 +1,4 @@
 function entrance(){
-    window.location.href='personal_account.php'
+    window.location.href='personal_account.php';
+    return false;
 }

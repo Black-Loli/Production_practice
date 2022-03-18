@@ -174,3 +174,9 @@ h4{
     font-size: 15px;
     font-weight: 100;
 }
+
+.menu{
+    display: flex;
+    height: 100%;
+    background: #000000;
+}

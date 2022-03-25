@@ -86,3 +86,9 @@ input::-webkit-input-placeholder {
     filter: drop-shadow(0 1px #ff00ff) drop-shadow(0 -1px #00ffff);
     margin: 30px 10px 50px;
 }
+
+.error{
+    color: #212529;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.48);
+}

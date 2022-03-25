@@ -20,5 +20,10 @@
         </form>
     </div>
 </body>
+<script>
+    document.getElementById('entrance').onclick = function(){
+        window.location.href='personal_account.php';
+        return false;
+    }
+</script>
 </html>
-<script src="script.js"></script>

@@ -81,7 +81,7 @@ input::-webkit-input-placeholder {
 
 .pass .z{
     text-align: center;
-    color: #d9d9d9;
+    color: #bdbcbc;
     font-weight: 100;
     filter: drop-shadow(0 1px #ff00ff) drop-shadow(0 -1px #00ffff);
     margin: 30px 10px 50px;

@@ -244,3 +244,41 @@ b{
 span.color_text{
     color: #a20000;
 }
+
+span.color_text_gray{
+    color: #505050;
+}
+
+div.test{
+    background: rgba(30, 30, 30, 0.2);
+    border: 1px solid #1e1e1e;
+    border-radius: 15px;
+    padding: 20px 20px;
+    margin: 50px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+div.test div.answers{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+div.test input{
+    margin-bottom: 20px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #bdbcbc;
+    padding: 18px 20px;
+    color: #333333;
+}
+
+div.test input:focus{
+    color: #212529;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}

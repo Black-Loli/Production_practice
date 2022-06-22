@@ -1,4 +1,11 @@
 <!doctype html>
+<?php
+session_start();
+include 'bd.php';
+$userQuery = $bdmr->prepare("SELECT * FROM Users WHERE ID=?");
+$userQuery->execute([$_SESSION['user_id']]);
+$userQueryResult = $userQuery->fetch(PDO::FETCH_OBJ);
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,24 +22,17 @@
 
 <div class="menu_acc">
     <div class="menu">
-        <p> hgtgbhghjghsgjk.sgk.</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-        <p> frgegkgkgubkfkfbfvhfhjdvfgk</p>
-    </div>
+        <div class="person">
+            <img src="https://3.downloader.disk.yandex.ru/preview/fef01af9ac01de5e8b4a850679d8906ceb738fd086c0b035e765ada8c0a76028/inf/jA_kSFI5ol72RAKk83uu4kLC8ttpWQszL5u0tdolgdWI2PFmYyNPKz-mddwTLdfKEBC2vnsl9sfzhWkfHd3SHQ%3D%3D?uid=555148530&filename=head.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=555148530&tknv=v2&size=1838x937">
+            <div>
+                <?php
+                echo "<h1>$userQueryResult->Surname $userQueryResult->Name</h1>
+        <h1>$userQueryResult->Patronymic</h1>";
 
-    <div class="red">
+                ?>
+            </div>
 
+        </div>
     </div>
 </div>
 

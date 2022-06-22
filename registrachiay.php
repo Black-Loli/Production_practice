@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +15,7 @@
 </head>
 <body>
 <div class="pass">
-    <form action="loginFormHandler.php" class="pass1" method="post" id="loginForm">
+    <form action="registrachiayFormHandler.php" class="pass1" method="post" id="loginForm">
         <h2 class="z"> Aзбука<br>Программирования </h2>
 
 
@@ -23,6 +26,7 @@
             <option class="op" selected>Выберите должность</option>
 
             <?php
+            session_start();
             include 'bd.php';
             try {
                 $userw = $bdmr->query('SELECT * FROM Types ');

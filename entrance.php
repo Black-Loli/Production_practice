@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,19 +14,19 @@
 </head>
 <body>
     <div class="pass">
-        <form action="#" class="pass1">
+        <form action="loginFormHandler.php" method="post" class="pass1">
             <h2 class="z"> Aзбука<br>Программирования </h2>
-            <input type="email" placeholder="Логин" required="" />
-            <input type="password" placeholder="Пароль" required="" minlength="6" maxlength="12" />
+            <input type="email" name="login" placeholder="Логин" required="" />
+            <input type="password" name="password" placeholder="Пароль" required="" minlength="6" maxlength="12" />
+            <h3>
+                <?php
+                echo $_SESSION['MESSAGE'] ?? "";
+                ?>
+            </h3>
             <button id="entrance" type="submit" class="btn btn-outline-light"> Войти </button>
             <a href="registrachiay.php" class="btn btn-outline-light reg"> Регистрация </a>
         </form>
     </div>
 </body>
-<script>
-    document.getElementById('entrance').onclick = function(){
-        window.location.href='personal_account.php';
-        return false;
-    }
-</script>
+
 </html>

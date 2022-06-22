@@ -2,7 +2,7 @@
 <?php
 session_start();
 include 'bd.php';
-$questionQuery = $bd->prepare("SELECT * FROM Question WHERE `Group` = 2");
+$questionQuery = $bdmr->prepare("SELECT * FROM Question WHERE `Group` = 2");
 $questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_OBJ);
 ?>
 <html lang="en">
@@ -24,34 +24,31 @@ $questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_OBJ);
 <form action="" method="post" id="TestForm">
 
     <?php
-    include 'bd.php';
-    try {
-
-        while ($question = $questionQueryResult->fetchAll(PDO::FETCH_OBJ)) {
-            echo "<div class='test'>{$question->Text_question}
-                        <div class='answers'> ... </div>
-                   </div>";
-        }
-    } catch (PDOExeption $y) {
-        echo $y->getMessage();
-    }
+    //    echo "$questionQueryResult->Text_question";
+    //    try {
+    //
+    //        while ($question = $questionQueryResult->fetchAll(PDO::FETCH_OBJ)) {
+    //            echo "<div class='test'>{$question->Text_question}
+    //                        <div class='answers'> ... </div>
+    //                   </div>";
+    //        }
+    //    } catch (PDOExeption $y) {
+    //        echo $y->getMessage();
+    //    }
     ?>
 
 
-
-
-
-    <div class="test">
-
-        <div class="answers"></div>
-    </div>
-
-    <div class="test">
-        <p><i><b> Задание  </b></i></p>
-
-        <input type=”text” id=”task_six”>
-    </div>
-
+    <!--    <div class="test">-->
+    <!---->
+    <!--        <div class="answers"></div>-->
+    <!--    </div>-->
+    <!---->
+    <!--    <div class="test">-->
+    <!--        <p><i><b> Задание  </b></i></p>-->
+    <!---->
+    <!--        <input type=”text” id=”task_six”>-->
+    <!--    </div>-->
+    <!---->
 
 </form>
 </body>

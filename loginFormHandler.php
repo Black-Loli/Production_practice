@@ -15,8 +15,12 @@ try {
         $_SESSION['MESSAGE'] = "";
         $_SESSION['user_name'] = $users[0]->name;
         $_SESSION['user_id'] = $users[0]->ID;
+        $_SESSION['user_type'] = $users[0]->Type;
 
-        header("Location: personal_account.php");
+        header("Location: personal_account_student.php");
+//        if ([$_SESSION['user_type']] == 1) {
+//        }
+
     }
 } catch (PDOException $e) {
     echo $e->getMessage();

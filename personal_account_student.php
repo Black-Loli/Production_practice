@@ -2,7 +2,7 @@
 <?php
 session_start();
 include 'bd.php';
-$userQuery = $bdmr->prepare("SELECT * FROM Users WHERE ID=?");
+$userQuery = $bdmr->prepare("SELECT * FROM Users JOIN Types ON Users.Type = Types.ID WHERE Users.ID=?");
 $userQuery->execute([$_SESSION['user_id']]);
 $userQueryResult = $userQuery->fetch(PDO::FETCH_OBJ);
 ?>
@@ -27,12 +27,16 @@ $userQueryResult = $userQuery->fetch(PDO::FETCH_OBJ);
             <div>
                 <?php
                 echo "<h1>$userQueryResult->Surname $userQueryResult->Name</h1>
-        <h1>$userQueryResult->Patronymic</h1>";
-
+                        <h1>$userQueryResult->Patronymic</h1>
+                        <h6>$userQueryResult->Description</h6>";
                 ?>
             </div>
-
         </div>
+        <ul>
+            <li>Пройденные тесты</li>
+            <li>Чат с учителем</li>
+            <li>Настройки аккаунта</li>
+        </ul>
     </div>
 </div>
 

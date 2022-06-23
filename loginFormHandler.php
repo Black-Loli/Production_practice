@@ -17,9 +17,13 @@ try {
         $_SESSION['user_id'] = $users[0]->ID;
         $_SESSION['user_type'] = $users[0]->Type;
 
-        header("Location: personal_account_student.php");
-//        if ([$_SESSION['user_type']] == 1) {
-//        }
+        if ($_SESSION['user_type'] == 1) {
+            header("Location: personal_account_student.php");
+        } else if ($_SESSION['user_type'] == 2){
+            header("Location: personal_account_teacher.php");
+        } else {
+            header("Location: personal_account_admin.php");
+        }
 
     }
 } catch (PDOException $e) {

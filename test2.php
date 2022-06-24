@@ -2,8 +2,8 @@
 <?php
 session_start();
 include 'bd.php';
-$questionQuery = $bdmr->prepare("SELECT * FROM Question WHERE `Group` = 2");
-$questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_OBJ);
+$questionQuery = $bdmr->query("SELECT * FROM Question WHERE `Group` = 2");
+$questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <html lang="en">
 <head>
@@ -24,17 +24,10 @@ $questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_OBJ);
 <!--<form action="" method="post" id="TestForm">-->
 
     <?php
-    //    echo "$questionQueryResult->Text_question";
-    //    try {
-    //
-    //        while ($question = $questionQueryResult->fetchAll(PDO::FETCH_OBJ)) {
-    //            echo "<div class='test'>{$question->Text_question}
-    //                        <div class='answers'> ... </div>
-    //                   </div>";
-    //        }
-    //    } catch (PDOExeption $y) {
-    //        echo $y->getMessage();
-    //    }
+    foreach($questionQueryResult as $question){
+        echo "<h1>Вопрос: {$question['Text_question']}</h1>";
+        echo "\n\r";
+    }
     ?>
 
 

@@ -33,8 +33,8 @@ $questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_ASSOC);
         $questionQueryID = $questionQueryResult['ID'];
         $answerQuery = $bdmr->query("SELECT * FROM Answer_variant WHERE ID_Question = {$questionQueryID}");
         $answerQueryResult = $answerQuery->fetchAll(PDO::FETCH_ASSOC);
-        var_dump($answerQueryResult);
-        if ($answerQueryResult = 0){
+//        var_dump($answerQueryResult);
+        if (count($answerQueryResult) == 0){
             echo "<input type='text'>";
         } else {
             foreach($answerQueryResult as $answer){

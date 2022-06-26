@@ -30,11 +30,12 @@ $questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_ASSOC);
         echo "<div class='test'>";
         echo "<p><b><i>Вопрос {$number}</i></b></p>";
         echo $question['Text_question'];
-        $questionQueryID = $question['ID'];
-        $answerQuery = $bdmr->query("SELECT * FROM Answer_variant WHERE ID_Question = $questionQueryID");
+        $questionQueryID = $questionQueryResult['ID'];
+        $answerQuery = $bdmr->query("SELECT * FROM Answer_variant WHERE ID_Question = {$questionQueryID}");
         $answerQueryResult = $answerQuery->fetchAll(PDO::FETCH_ASSOC);
+        var_dump($answerQueryResult);
         if ($answerQueryResult = 0){
-            echo "<input type=”text”>";
+            echo "<input type='text'>";
         } else {
             foreach($answerQueryResult as $answer){
                 echo "<input type='radio'> {$answer['Description']}";

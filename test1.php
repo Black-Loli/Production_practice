@@ -1,15 +1,54 @@
 <!doctype html>
+<?php
+session_start();
+include 'bd.php';
+$questionQuery = $bdmr->query("SELECT * FROM Question WHERE `Group` = 1");
+$questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_ASSOC);
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style1.css" />
-    <title>Тест 1</title>
+    <title>Тест по модулю 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<p><img src="https://3.downloader.disk.yandex.ru/preview/8cdec1e3db940305f663b14ac22be102a756f7d565ae57939816885349ddf196/inf/KXdIQ_3fzcozpu5H4cEJbMyL83-yq2pgTiud_KxNDx1IZ39CeRa5QVJ0lX_oXTHrCIWmT4nxDyhPy3sGQO0Zmw%3D%3D?uid=555148530&filename=development.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=555148530&tknv=v2&size=1838x937"></p>
-<h1> Извините, тест разрабатывается, загляните позже</h1>
+
+<?php include 'menu.php'; ?>
+
+<h1>Тест по модулю 1</h1>
+<form action="" method="post" id="TestFormOne">
+    <?php
+    $number = 0;
+    foreach ($questionQueryResult as $question) {
+        $number++;
+        echo "<div class='test'>";
+        echo "<p><b><i>Задание {$number}</i></b></p>";
+        echo $question['Text_question'];
+        echo "<div class='answers'>";
+        $questionQueryID = $question['ID'];
+        $answerQuery = $bdmr->query("SELECT * FROM Answer_variant WHERE ID_Question = {$questionQueryID}");
+        $answerQueryResult = $answerQuery->fetchAll(PDO::FETCH_ASSOC);
+        if (count($answerQueryResult) == 0) {
+            echo "<input class='text_response' type='text'>";
+        } else {
+            foreach ($answerQueryResult as $answer) {
+                echo "<div>
+                        <input type='radio' name='task' class='answer_variant'> <p>{$answer['Description']}</p>
+                      </div>";
+                echo "\n\r";
+            }
+        }
+        echo "</div>";
+        echo "</div>";
+        echo "\n\r";
+    }
+    ?>
+</form>
+
 </body>
 </html>

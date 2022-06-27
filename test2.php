@@ -21,8 +21,7 @@ $questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_ASSOC);
 <?php include 'menu.php'; ?>
 
 <h1>Тест по модулю 2</h1>
-<form action="" method="post" id="TestForm">
-
+<form action="" method="post" id="TestFormTwo">
     <?php
     $number = 0;
     foreach ($questionQueryResult as $question) {
@@ -49,7 +48,6 @@ $questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_ASSOC);
         echo "\n\r";
     }
     ?>
-
 </form>
 
 </body>

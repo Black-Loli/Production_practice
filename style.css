@@ -218,7 +218,8 @@ div.code{
     border: 1px solid #1e1e1e;
     border-radius: 15px;
     padding: 15px 0;
-    margin: 10px 0;
+    margin: 10px auto;
+    width: 98%;
 }
 
 div.code p{
@@ -250,35 +251,54 @@ span.color_text_gray{
 }
 
 div.test{
-    background: rgba(30, 30, 30, 0.2);
     border: 1px solid #1e1e1e;
     border-radius: 15px;
     padding: 20px 20px;
     margin: 50px 50px 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
+    color: #ffffff;
+    background: #1e1e1e;
+}
+
+div.test div.code{
+    background: rgba(139, 139, 139, 0.2);
+}
+
+div.test div.code .color_text_gray{
+    color: #909090;
 }
 
 div.test div.answers{
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
+    flex-direction: column;
+    width: 100%;
 }
 
 div.test input{
     margin-bottom: 20px;
-    width: 90%;
     border-radius: 10px;
     border: 1px solid #bdbcbc;
     padding: 18px 20px;
     color: #333333;
 }
 
+div.test input.text_response{
+    margin: 10px auto;
+    width: 98%;
+}
+
+div.test input.answer_variant{
+    /*width: 5%;*/
+}
+
 div.test input:focus{
     color: #212529;
     background-color: #ffffff;
     border-color: #ffffff;
+    border-radius: 10px;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
@@ -316,4 +336,10 @@ li{
     width: 100%;
     padding: 30px 0;
     text-align: center;
+}
+
+div.test .answers div{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
 }

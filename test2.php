@@ -21,89 +21,34 @@ $questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_ASSOC);
 <?php include 'menu.php'; ?>
 
 <h1>Тест по модулю 2</h1>
-<!--<form action="" method="post" id="TestForm">-->
+<form action="" method="post" id="TestForm">
 
     <?php
     $number = 0;
-    foreach($questionQueryResult as $question){
+    foreach ($questionQueryResult as $question) {
         $number++;
         echo "<div class='test'>";
-        echo "<p><b><i>Вопрос {$number}</i></b></p>";
+        echo "<p><b><i>Задание {$number}</i></b></p>";
         echo $question['Text_question'];
-        $questionQueryID = $questionQueryResult['ID'];
+        echo "<div class='answers'>";
+        $questionQueryID = $question['ID'];
         $answerQuery = $bdmr->query("SELECT * FROM Answer_variant WHERE ID_Question = {$questionQueryID}");
         $answerQueryResult = $answerQuery->fetchAll(PDO::FETCH_ASSOC);
-//        var_dump($answerQueryResult);
-        if (count($answerQueryResult) == 0){
-            echo "<input type='text'>";
+        if (count($answerQueryResult) == 0) {
+            echo "<input class='text_response' type='text'>";
         } else {
-            foreach($answerQueryResult as $answer){
-                echo "<input type='radio'> {$answer['Description']}";
+            foreach ($answerQueryResult as $answer) {
+                echo "<div>
+                        <input type='radio' name='task' class='answer_variant'> <p>{$answer['Description']}</p>
+                      </div>";
+                echo "\n\r";
             }
         }
+        echo "</div>";
         echo "</div>";
         echo "\n\r";
     }
     ?>
-
-
-    <!--    <div class="test">-->
-    <!---->
-    <!--        <div class="answers"></div>-->
-    <!--    </div>-->
-    <!---->
-    <!--    <div class="test">-->
-    <!--        <p><i><b> Задание  </b></i></p>-->
-    <!---->
-    <!--        <input type=”text” id=”task_six”>-->
-    <!--    </div>-->
-    <!---->
-
-<!--</form>-->
-
-<form action="" method="post" id="TestForm">
-    <div class="test">
-        <p><i><b> Задание 1 </b></i></p>
-        <p> Параметр цикла For может получить значения… </p>
-
-        <div class="answers">
-            <div>
-                <input type="radio" name="task_one" data-right>
-                1,2,3,4,5
-            </div>
-            <div>
-                <input type="radio" name="task_one">
-                2,4,6,8,10
-            </div>
-            <div>
-                <input type="radio" name="task_one">
-                1,3,5,7,9
-            </div>
-        </div>
-    </div>
-
-    <div class="test">
-        <p><i><b> Задание 6 </b></i></p>
-        <p> Наберите следующую программу. Компьютер выведет на экран в столбик 15 случайных чисел от 8 до 39. </p>
-        <div class="code">
-            <p><b> var </b></p>
-            <p class="indent"> c, s: <b>integer</b>;</p>
-            <p class="indent_top"><b>begin</b></p>
-            <p class="indent"> writeln('15 случайных чисел от 8 до 40');</p>
-            <p class="indent_top indent"><b>for</b> c:= 1 <b>to</b> 15 <b>do</b></p>
-            <p class="indent"><b>begin</b></p>
-            <p class="indent_more">s:= random(32) + 8; <span class="color_text_gray">{Генерируется случайное число в диапазоне от 0 до 31, затем
-                к нему прибавляется 8, получаем случайное число от 8 до 39}</span></p>
-            <p class="indent_more">writeln (s);</p>
-            <p class="indent"><b>end;</b></p>
-            <p><b>end.</b></p>
-        </div>
-        <p> Самостоятельно измените программу так, чтобы на экране были напечатаны в строчку 8 случайных дробных чисел
-            от 5 до 25. Ответ напишите ниже в поле. </p>
-
-        <input type=”text” id=”task_six”>
-    </div>
-
 
 </form>
 

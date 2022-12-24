@@ -2,7 +2,7 @@
 <?php
 session_start();
 include 'bd.php';
-$questionQuery = $bdmr->query("SELECT * FROM Question WHERE `Group` = 2");
+$questionQuery = $bdmr->query("SELECT * FROM Question WHERE `Group` = 1");
 $questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <html lang="en">
@@ -14,14 +14,14 @@ $questionQueryResult = $questionQuery->fetchAll(PDO::FETCH_ASSOC);
     <title>Тест по модулю 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="../src/css/style.css"/>
 </head>
 <body>
 
 <?php include 'menu.php'; ?>
 
-<h1>Тест по модулю 2</h1>
-<form action="" method="post" id="TestFormTwo">
+<h1>Тест по модулю 1</h1>
+<form action="" method="post" id="TestFormOne">
     <?php
     $number = 0;
     foreach ($questionQueryResult as $question) {
